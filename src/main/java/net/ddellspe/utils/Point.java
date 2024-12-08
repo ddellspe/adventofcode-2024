@@ -30,6 +30,10 @@ public class Point {
     return x == point.x && y == point.y;
   }
 
+  public Point difference(Point pt) {
+    return new Point(pt.x - this.x, pt.y - this.y);
+  }
+
   public Point move(Point point) {
     return new Point(this.x + point.x, this.y + point.y);
   }

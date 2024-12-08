@@ -146,4 +146,9 @@ public class PointTest {
   public void testMovePoint() {
     assertEquals(new Point(3, 3), new Point(1, 1).move(new Point(2, 2)));
   }
+
+  @Test
+  public void testDifferencePoint() {
+    assertEquals(new Point(-1, -1), new Point(2, 2).difference(new Point(1, 1)));
+  }
 }
