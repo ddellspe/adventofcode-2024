@@ -51,13 +51,13 @@ public class Day16Test {
         new Day16.State(new Point(0, 0), 0L, new Point(1, 0), Set.of(new Point(1, 0)));
     assertNotEquals(state, state3);
     Day16.State state4 =
-        new Day16.State(new Point(0, 0), 0L, new Point(1, 1), Set.of(new Point(1, 0)));
+        new Day16.State(new Point(0, 0), 0L, new Point(1, 1), Set.of(new Point(0, 0)));
     assertNotEquals(state, state4);
     Day16.State state5 =
-        new Day16.State(new Point(0, 0), 1L, new Point(1, 1), Set.of(new Point(1, 0)));
+        new Day16.State(new Point(0, 0), 1L, new Point(1, 0), Set.of(new Point(0, 0)));
     assertNotEquals(state, state5);
     Day16.State state6 =
-        new Day16.State(new Point(1, 0), 1L, new Point(1, 1), Set.of(new Point(1, 0)));
+        new Day16.State(new Point(1, 0), 0L, new Point(1, 0), Set.of(new Point(0, 0)));
     assertNotEquals(state, state6);
   }
 }
