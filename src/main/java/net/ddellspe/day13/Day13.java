@@ -34,7 +34,6 @@ public class Day13 {
     }
     calculations.add(new Calculation(aXMove, aYMove, bXMove, bYMove, prize));
     for (Calculation calculation : calculations) {
-      assert prize != null;
       double[] output = calculation.gaussianElimination(0L);
 
       long a = Math.round(output[0]);
@@ -77,7 +76,6 @@ public class Day13 {
     }
     calculations.add(new Calculation(aXMove, aYMove, bXMove, bYMove, prize));
     for (Calculation calculation : calculations) {
-      assert prize != null;
       double[] output = calculation.gaussianElimination(10000000000000L);
 
       long a = Math.round(output[0]);
